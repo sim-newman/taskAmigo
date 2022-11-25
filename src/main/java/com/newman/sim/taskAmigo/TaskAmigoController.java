@@ -17,7 +17,7 @@ public class TaskAmigoController {
 
     @RequestMapping("/save")
     public String save(){
-        repository.save(new Task("Meeting", "1 to 1 Gavin"));
+        repository.save(new Task("Meeting", "1 to 1 Gavin", false, false));
         return "TaskAmigoAppSaved";}
 
     @RequestMapping("/findAll")
