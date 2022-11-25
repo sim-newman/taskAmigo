@@ -14,31 +14,7 @@ public class TaskAmigoApplication {
     public static void main(String[] args) {
 
 		SpringApplication.run(TaskAmigoApplication.class, args);
-		System.out.println("System is up");
+		log.info("taskAmigo is good to go!");
     }
-
-        @Bean
-        public CommandLineRunner demo(TaskRepository repository) {
-            return (args) -> {
-                // save a few tasks
-                repository.save(new Task("Meeting", "1 to 1 Animesh"));
-                repository.save(new Task("Meeting", "1 to 1 Simon"));
-
-                // fetch all customers
-                log.info("Tasks found with findAll():");
-                log.info("-------------------------------");
-                for (Task task : repository.findAll()) {
-                    log.info(task.toString());
-                }
-                log.info("");
-
-
-            };
-
-        }
-
-
-
-
 
 }
