@@ -31,3 +31,46 @@ build/
 
 ### VS Code ###
 .vscode/
+
+ Logs and databases #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+data
+*.db
+
+.project
+.classpath
+.idea
+.iml
+atlassian-ide-plugin.xml
+target
+bin
+.settings
+
+
+# Compiled source #
+###################
+*.com
+*.dll
+*.exe
+*.o
+*.so
+
+# Package #
+###########
+# It is better to unpack these files and commit as raw sources
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+

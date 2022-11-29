@@ -1,0 +1,26 @@
+{
+	"info": {
+		"_postman_id": "471c106c-d0fb-42a9-a8ce-5f2522ed2ac4",
+		"name": "Task Amigo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1588015"
+	},
+	"item": [
+		{
+			"name": "Save information",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Find all",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
