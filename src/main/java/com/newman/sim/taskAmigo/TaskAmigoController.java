@@ -15,13 +15,22 @@ public class TaskAmigoController {
     @RequestMapping("/")
     public String index(){return "TaskAmigo Application is up!";}
 
-    @RequestMapping("/save")
+    @RequestMapping("/saveTestData")
     public String save(){
         repository.save(new Task("Meeting", "1 to 1 Gavin", false, false));
         return "TaskAmigoAppSaved";}
 
+    @RequestMapping("/save")
+    public String save(String title, String description, Boolean planned, Boolean completed){
+        repository.save(new Task(title, description, planned, completed));
+        return "New task " + title + " saved";}
+
     @RequestMapping("/findAll")
     public Iterable<Task> findAll(){
         return repository.findAll();}
+
+    @RequestMapping("/findAllByTitle")
+    public Iterable<Task> findbyTitle(String title){
+        return repository.findByTitle(title) ; }
 
 }
